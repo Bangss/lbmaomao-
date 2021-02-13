@@ -1,0 +1,22 @@
+<!--pages/purchase/queryAll/queryAll.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+</view>
+<view class="i-swipeout-demo"  wx:for="{{allRecord}}" wx:key="pDate">
+    <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{120}}">
+            <view slot="content">
+                <i-cell 
+                    i-class="i-cell-padding" 
+                    title="{{item.gName}}" 
+                    label="进货日期：{{item.pDate}}">
+                </i-cell>
+            </view>
+            <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+            <view class="i-swipeout-demo-button" style="width:60px" bindtap="query" data-id="{{item.pId}}"><i-icon size="32" type="enterinto"></i-icon></view>
+        
+            <view class="i-swipeout-demo-button" style="width:60px" bindtap="delete" data-id="{{item.pId}}"><i-icon size="32" type="delete"></i-icon></view>
+            </view>
+        </i-swipeout>
+</view>

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<image class="top-img" src="../../img/星之卡比.jpg"></image>
+<!--查看-->
+<i-row>
+  <i-col span='24' offset='1' i-class="col-class"><i-icon type="collection" size="18" color="#ec959b"/>星之瞅瞅<i-icon type="collection" size="18" color="#ec959b"/></i-col>
+</i-row>
+<i-cell-group>
+    <i-cell title="看看库存" i-class="cell" is-link url="../inventory/inventory"></i-cell>
+    <i-cell title="看看收益" i-class="cell" is-link url="../profit/profit"></i-cell>
+    <i-cell title="进货记录" i-class="cell" is-link url="../purchase/queryAll/queryAll"></i-cell>
+  </i-cell-group>
+<!--新增-->
+<i-row>
+  <i-col span='24' offset='1' i-class="col-class"><i-icon type="collection" size="18" color="#ec959b"/>星之加加<i-icon type="collection" size="18" color="#ec959b"/></i-col>
+</i-row>
+<i-cell-group>
+    <i-cell title="进个货货" i-class="cell" is-link url="../purchase/purchase"></i-cell>
+</i-cell-group>

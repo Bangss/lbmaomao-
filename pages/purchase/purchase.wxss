@@ -1,0 +1,4 @@
+/* pages/purchase/purchase.wxss */
+.picker{
+	height: 24px;
+}

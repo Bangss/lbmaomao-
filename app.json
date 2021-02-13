@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/inventory/inventory",
+    "pages/inventory/queryOne/queryOne",
+    "pages/purchase/purchase",
+    "pages/profit/profit",
+    "pages/purchase/queryAll/queryAll",
+    "pages/purchase/queryOne/queryOne",
+    "pages/purchase/update/update",
+    "pages/test/test"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "林北的百宝袋",
+    "navigationBarTextStyle":"black"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

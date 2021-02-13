@@ -1,0 +1,16 @@
+<!--pages/purchase/queryOne/queryOne.wxml-->
+<form catchsubmit="formSubmit" >
+  <i-panel title="订单详情" >
+      <i-input name="gNmae" value="{{ detail.gName }}" title="色号" autofocus disabled="{{flag}}" />
+      <i-input name="pNum" value="{{ detail.pNum }}" title="数量" type="number"   disabled="{{flag}}" />
+      <i-input name="pPrice" value="{{ detail.pPrice }}" title="单价"  type="number" disabled="{{flag}}"/>
+      <i-input name="pDate" value="{{ detail.pDate }}" title="日期" disabled="{{flag}}" />
+      <i-input name="pOrder" value="{{ detail.pOrder }}" title="订单号" disabled="{{flag}}" />
+      <i-input name="merchant" value="{{ detail.merchant }}" title="商家" disabled="{{flag}}" />
+      <i-panel></i-panel>
+      <view class="button-sp-area">
+        <button type="primary" bindtap="{{bt1}}" form-type="{{ft1}}" plain="true">{{bText1}}</button>
+        <button type="default" bindtap="{{bt2}}" plain="true">{{bText2}}</button>
+      </view>
+  </i-panel>
+</form>

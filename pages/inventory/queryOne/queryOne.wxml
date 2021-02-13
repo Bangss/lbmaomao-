@@ -1,0 +1,21 @@
+<!--pages/inventory/queryOne/queryOne.wxml-->
+<form catchsubmit="formSubmit" >
+  <i-panel title="库存详情" >
+      <i-input name="gNmae" value="{{ detail.gName }}" title="色号" autofocus disabled="{{flag}}" />
+      <i-input name="pNum" value="{{ detail.gNum }}" title="数量" type="number"   disabled="{{flag}}" />
+			<picker disabled="{{flag}}" bindchange="cBindPickerChange" name="cId" value="{{classes}}" range-key="name" range="{{cObjectArray}}">
+          <view class="picker"><text space="nbsp">类型        </text>
+            {{cObjectArray[cIndex].name}}
+          </view>
+        </picker>
+        <picker disabled="{{flag}}" bindchange="bBindPickerChange" name="bId" value="{{brand}}" range-key="name" range="{{bObjectArray}}">
+          <view class="picker"><text space="nbsp">品牌        </text>
+            {{bObjectArray[bIndex].name}}
+          </view>
+        </picker> 
+      <view class="button-sp-area">
+        <button type="primary" bindtap="{{bt1}}" form-type="{{ft1}}" plain="true">{{bText1}}</button>
+        <button type="default" bindtap="{{bt2}}" plain="true">{{bText2}}</button>
+      </view>
+  </i-panel>
+</form>
